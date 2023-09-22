@@ -16,17 +16,6 @@ color:
 # true: 标签模式, false: 文本模式
 badge: false
 
-# 公告
-# url: 可选, title 超链接地址
-# price: 可选，自定义内容，不一定是数字
-tips:
-  - title: 公告一
-    description: 公告内容
-  - title: 公告二
-    description: 公告内容
-  - title: 公告三
-    description: 公告内容
-
 # 域名列表
 # url 可选, domain 超链接地址, 比如议价的话可跳转到自定义的报价页面
 # price 可选，但建议都写上，自定义内容，不一定是数字
@@ -41,28 +30,6 @@ reserved-domains:
   - domain: c.com
     description: 描述内容
     price: 非卖品
-# 出售中
-onsale-domains:
-  - domain: a.com
-    description: 描述内容
-    price: $888
-  - domain: b.com
-    description: 描述内容
-    price: 议价
-  - domain: c.com
-    description: 描述内容
-    price: ￥666
-# 已售出
-sold-domains:
-  - domain: a.com
-    description: 描述内容
-    price: 已出售
-  - domain: b.com
-    description: 描述内容
-    price: 已出售
-  - domain: c.com
-    description: 描述内容
-    price: 已出售
 
 # 联系方式
 # url 可选, 超链接地址
@@ -72,10 +39,3 @@ contacts:
   - type: Email
     text: xxx@xxx.com
     url: mailto:xxx@xxx.com
-  - type: 微信
-    text: wx88888888
-
-# 米表联盟
-links:
-  - url: http://mibiao.vercel.app
-    description: 懒人米表
