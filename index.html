@@ -235,18 +235,11 @@
         {%- if site.badge == true -%}
             <span class="block">
                 <a href="/">
-                    <img src="https://img.shields.io/badge/版权所有-{{ site.title }}-{{ site.color.default }}">
-                </a>
-            </span>
-            <span class="block">
-                <a href="https://github.com/newbill/domain-list" target="_blank">
-                    <img src="https://img.shields.io/badge/Github-newbill-{{ site.color.default }}">
                 </a>
             </span>
             {%- if site.donate -%}
             <span class="block">
                 <a href="{{ site.donate }}" target="_blank">
-                    <img src="https://img.shields.io/badge/-请我喝一杯咖啡-{{ site.color.default }}">
                 </a>
             </span>
             {%- endif -%}
@@ -254,9 +247,7 @@
             <div class="default">
                 &copy;&nbsp;<a href="/">{{ site.title }}</a>
                 &nbsp;<span style="color: red">❤</span>&nbsp;
-                <a href="https://github.com/newbill/domain-list" target="_blank">米表源码</a>
                 {%- if site.donate -%}
-                &nbsp;<span style="color: red">❤</span>&nbsp;<a href="{{ site.donate }}" target="_blank">请我喝一杯咖啡</a>
                 {%- endif -%}
             </div>
         {%- endif -%}
