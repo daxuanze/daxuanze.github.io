@@ -22,51 +22,6 @@
             <img src=".img/a.png" alt="logo">
         </div>
 
-        <!-- 公告 -->
-        {%- if site.tips -%}
-        <div class="item">
-            <div class="default">公告</div>
-            <hr>
-            <div class="boxs">
-            {%- if site.badge == true -%}
-                {%- for tip in site.tips -%}
-                <div class="box">
-                    <div class="card">
-                        <div class="title">
-                            <span class="domain">
-                                <a href="{%- if tip.url -%}{{ tip.url }}{%- else -%}/{%- endif -%}" class="default" {%- if tip.url -%}target="_blank"{%- endif -%}>{{ tip.title }}</a>
-                            </span>
-                            {%- if tip.price -%}
-                            <span class="price">
-                                <img src="https://img.shields.io/badge/{{ tip.price }}-{{ site.color.default }}">
-                            </span>
-                            {%- endif -%}
-                        </div>
-                        <span class="desc default">{{ tip.description }}</span>
-                    </div>
-                </div>
-                {%- endfor -%}
-            {%- else -%}
-                {%- for tip in site.tips -%}
-                <div class="box">
-                    <div class="card">
-                        <div class="title">
-                            <span class="domain">
-                                <a href="{%- if tip.url -%}{{ tip.url }}{%- else -%}/{%- endif -%}" class="default" {%- if tip.url -%}target="_blank"{%- endif -%}>{{ tip.title }}</a>
-                            </span>
-                            {%- if tip.price -%}
-                            <span class="price default">{{ tip.price }}</span>
-                            {%- endif -%}
-                        </div>
-                        <span class="desc default">{{ tip.description }}</span>
-                    </div>
-                </div>
-                {%- endfor -%}
-            {%- endif -%}
-            </div>
-        </div>
-        {%- endif -%}
-
         <!-- 非卖品 -->
         {%- if site.reserved-domains -%}
         <div class="item">
